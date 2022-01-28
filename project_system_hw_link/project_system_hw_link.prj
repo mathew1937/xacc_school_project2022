@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="project_system_hw_link" platform="/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm" systemProject="project_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.89720535">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_mean_shift">
+        <kernels name="mean_shift_accel" projectName="project_kernels">
+          <computeUnits name="mean_shift_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="tlx" master="true" memory=""/>
+            <args name="tly" master="true" memory=""/>
+            <args name="obj_height" master="true" memory=""/>
+            <args name="obj_width" master="true" memory=""/>
+            <args name="dx" master="true" memory=""/>
+            <args name="dy" master="true" memory=""/>
+            <args name="track" master="true" memory=""/>
+            <args name="frame_status"/>
+            <args name="no_objects"/>
+            <args name="no_of_iterations"/>
+            <args name="rows"/>
+            <args name="cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="krnl_mean_shift">
+        <kernels name="mean_shift_accel" projectName="project_kernels">
+          <computeUnits name="mean_shift_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="tlx" master="true" memory=""/>
+            <args name="tly" master="true" memory=""/>
+            <args name="obj_height" master="true" memory=""/>
+            <args name="obj_width" master="true" memory=""/>
+            <args name="dx" master="true" memory=""/>
+            <args name="dy" master="true" memory=""/>
+            <args name="track" master="true" memory=""/>
+            <args name="frame_status"/>
+            <args name="no_objects"/>
+            <args name="no_of_iterations"/>
+            <args name="rows"/>
+            <args name="cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.1958952313">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="krnl_mean_shift">
+        <kernels name="mean_shift_accel" projectName="project_kernels">
+          <computeUnits name="mean_shift_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="tlx" master="true" memory=""/>
+            <args name="tly" master="true" memory=""/>
+            <args name="obj_height" master="true" memory=""/>
+            <args name="obj_width" master="true" memory=""/>
+            <args name="dx" master="true" memory=""/>
+            <args name="dy" master="true" memory=""/>
+            <args name="track" master="true" memory=""/>
+            <args name="frame_status"/>
+            <args name="no_objects"/>
+            <args name="no_of_iterations"/>
+            <args name="rows"/>
+            <args name="cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="krnl_mean_shift">
+        <kernels name="mean_shift_accel" projectName="project_kernels">
+          <computeUnits name="mean_shift_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="tlx" master="true" memory=""/>
+            <args name="tly" master="true" memory=""/>
+            <args name="obj_height" master="true" memory=""/>
+            <args name="obj_width" master="true" memory=""/>
+            <args name="dx" master="true" memory=""/>
+            <args name="dy" master="true" memory=""/>
+            <args name="track" master="true" memory=""/>
+            <args name="frame_status"/>
+            <args name="no_objects"/>
+            <args name="no_of_iterations"/>
+            <args name="rows"/>
+            <args name="cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1680170876">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="krnl_mean_shift">
+        <kernels name="mean_shift_accel" projectName="project_kernels">
+          <computeUnits name="mean_shift_accel_1" slr="">
+            <args name="img_inp" master="true" memory=""/>
+            <args name="tlx" master="true" memory=""/>
+            <args name="tly" master="true" memory=""/>
+            <args name="obj_height" master="true" memory=""/>
+            <args name="obj_width" master="true" memory=""/>
+            <args name="dx" master="true" memory=""/>
+            <args name="dy" master="true" memory=""/>
+            <args name="track" master="true" memory=""/>
+            <args name="frame_status"/>
+            <args name="no_objects"/>
+            <args name="no_of_iterations"/>
+            <args name="rows"/>
+            <args name="cols"/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

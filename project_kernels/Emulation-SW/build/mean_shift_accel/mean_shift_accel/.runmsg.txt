@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: mean_shift_accel
+Log file: /home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log

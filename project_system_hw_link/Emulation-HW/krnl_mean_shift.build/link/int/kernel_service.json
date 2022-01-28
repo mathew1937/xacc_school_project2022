@@ -1,0 +1,17 @@
+{
+ "kernels": [],
+ "computeUnits": [
+  {
+   "id": "",
+   "kernelName": "mean_shift_accel",
+   "cuName": "mean_shift_accel_1",
+   "baseAddress": "",
+   "instancePath": "/emu_wrapper/emu_i/dynamic_region/mean_shift_accel_1",
+   "slr": [],
+   "simInstanceName": "inst",
+   "locNames": [],
+   "tileNames": []
+  }
+ ]
+}
+

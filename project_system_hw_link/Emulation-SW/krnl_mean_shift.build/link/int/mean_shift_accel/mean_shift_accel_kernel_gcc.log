@@ -1,0 +1,9 @@
+In file included from /home/centos/workspace/project_kernels/src/../../project/src/xf_mean_shift_config.h:20:0,
+                 from /home/centos/workspace/project_system_hw_link/Emulation-SW/krnl_mean_shift.build/link/int/xo/mean_shift_accel/mean_shift_accel/cpu_sources/xf_mean_shift_accel.cpp:18:
+/home/centos/workspace/project_kernels/src/../../project/src/../../project/src/build/xf_mean_shift_config_params.h:17:0: warning: "INPUT_PTR_WIDTH" redefined
+ #define INPUT_PTR_WIDTH 32
+ 
+In file included from /home/centos/workspace/project_system_hw_link/Emulation-SW/krnl_mean_shift.build/link/int/xo/mean_shift_accel/mean_shift_accel/cpu_sources/xf_mean_shift_accel.cpp:17:0:
+/home/centos/workspace/project_kernels/src/../../project/src/xf_cvt_color_config.h:33:0: note: this is the location of the previous definition
+ #define INPUT_PTR_WIDTH 512
+ 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 108.754 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp&apos; ..." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-910]" key="HLS 207-910" tag="" content="&apos;INPUT_PTR_WIDTH&apos; macro redefined: /home/centos/workspace/project_kernels/src/../../project/src/../../project/src/build/xf_mean_shift_config_params.h:17:9" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 207-71]" key="HLS 207-71" tag="" content="previous definition is here: /home/centos/workspace/project_kernels/src/../../project/src/xf_cvt_color_config.h:33:9" resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3771]" key="HLS 207-3771" tag="" content="use of undeclared identifier &apos;inMat&apos;: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:55" resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3771]" key="HLS 207-3771" tag="" content="use of undeclared identifier &apos;outMat&apos;: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:55" resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3771]" key="HLS 207-3771" tag="" content="use of undeclared identifier &apos;inMat&apos;: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:50" resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3771]" key="HLS 207-3771" tag="" content="use of undeclared identifier &apos;outMat&apos;: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:57" resolution=""/>
+	<Message severity="ERROR" prefix="[HLS 207-3771]" key="HLS 207-3771" tag="" content="use of undeclared identifier &apos;outMat&apos;: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:33" resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 207-5528]" key="HLS 207-5528" tag="" content="Ignore interface attribute or pragma which is not used in top function: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:48:9" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command csynth_design CPU user time: 3.17 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.69 seconds; current allocated memory: 109.858 MB." resolution=""/>
+</Messages>

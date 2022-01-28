@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="com.xilinx.ide.accel.config.sw_emu.x86.861823897">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.ide.accel.config.sw_emu.x86.861823897" moduleId="org.eclipse.cdt.core.settings" name="Emulation-SW">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration buildArtefactType="com.xilinx.accelerated.buildArtefactType.hostExe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.xilinx.accelerated.buildArtefactType.hostExe" description="" id="com.xilinx.ide.accel.config.sw_emu.x86.861823897" name="Emulation-SW" parent="com.xilinx.ide.accel.config.sw_emu.x86">
+                    					
+                    <folderInfo id="com.xilinx.ide.accel.config.sw_emu.x86.861823897." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.xilinx.ide.accel.toolchain.sw_emu.debug.1794931163" name="Accelerated Host Application Toolchain (x86_64)" superClass="com.xilinx.ide.accel.toolchain.sw_emu.debug">
+                            							
+                            <targetPlatform id="com.xilinx.ide.accel.config.sw_emu.x86.861823897..2107969585" name=""/>
+                            							
+                            <builder buildPath="${workspace_loc:/project}/Emulation-SW" enableAutoBuild="true" id="com.xilinx.ide.accel.builder.host.1469996616" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Accelerated Host Application Builder" superClass="com.xilinx.ide.accel.builder.host"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.emconfigutil.1726431594" name="emconfigutil" superClass="com.xilinx.ide.accel.tool.emconfigutil"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_compiler.sw_emu.debug.883578055" name="GCC Host Compiler (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_compiler.sw_emu.debug">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.include.paths.1148734259" name="Include paths (-I)" superClass="com.xilinx.ide.accel.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/ext/xcl2/}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/L1/include}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/usr/include/opencv"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:${ProjName}/src/build}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_INCLUDE}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/include/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_VIVADO_HLS}/include/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.preprocessor.def.60821370" name="Defined symbols (-D)" superClass="com.xilinx.ide.accel.cpp.compiler.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDSVHLS__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDA_MEM_MAP__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="VITIS_PLATFORM=$(VITIS_PLATFORM)"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__USE_XOPEN2K8"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.other.other.1363261588" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-O3 -c -fmessage-length=0" valueType="string"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.cpp.1582901151" superClass="com.xilinx.ide.accel.managedbuild.input.cpp"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.c.1348801627" superClass="com.xilinx.ide.accel.managedbuild.input.c"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_linker.hw.684107384" name="GCC Host Linker (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_linker.hw">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.paths.1225018526" name="Library search path (-L)" superClass="com.xilinx.ide.accel.cpp.linker.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_LIB}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/lib/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.libs.x86.1239374043" name="Libraries (-l)" superClass="com.xilinx.ide.accel.cpp.linker.option.libs.x86" valueType="libFiles">
+                                    									
+                                    <listOptionValue builtIn="false" value="xml2"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_core"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_imgproc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_features2d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_flann"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_video"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_calib3d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_highgui"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="xilinxopencl"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="pthread"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="rt"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="stdc++"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.125258304" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="com.xilinx.ide.accel.config.hw_emu.x86.757217047">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.ide.accel.config.hw_emu.x86.757217047" moduleId="org.eclipse.cdt.core.settings" name="Emulation-HW">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration buildArtefactType="com.xilinx.accelerated.buildArtefactType.hostExe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.xilinx.accelerated.buildArtefactType.hostExe" description="" id="com.xilinx.ide.accel.config.hw_emu.x86.757217047" name="Emulation-HW" parent="com.xilinx.ide.accel.config.hw_emu.x86">
+                    					
+                    <folderInfo id="com.xilinx.ide.accel.config.hw_emu.x86.757217047." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.xilinx.ide.accel.toolchain.hw_emu.debug.5768913" name="Accelerated Host Application Toolchain (x86_64)" superClass="com.xilinx.ide.accel.toolchain.hw_emu.debug">
+                            							
+                            <targetPlatform id="com.xilinx.ide.accel.config.hw_emu.x86.757217047..1694159888" name=""/>
+                            							
+                            <builder buildPath="${workspace_loc:/project}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.ide.accel.builder.host.1614123964" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Accelerated Host Application Builder" superClass="com.xilinx.ide.accel.builder.host"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.emconfigutil.1687281730" name="emconfigutil" superClass="com.xilinx.ide.accel.tool.emconfigutil"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_compiler.hw_emu.debug.1135829838" name="GCC Host Compiler (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_compiler.hw_emu.debug">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.include.paths.308874294" name="Include paths (-I)" superClass="com.xilinx.ide.accel.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/ext/xcl2/}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/L1/include}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/usr/include/opencv"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:${ProjName}/src/build}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_INCLUDE}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/include/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_VIVADO_HLS}/include/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.preprocessor.def.358333916" name="Defined symbols (-D)" superClass="com.xilinx.ide.accel.cpp.compiler.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDSVHLS__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDA_MEM_MAP__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="VITIS_PLATFORM=$(VITIS_PLATFORM)"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__USE_XOPEN2K8"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.other.other.1504098648" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-O3 -c -fmessage-length=0" valueType="string"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.cpp.1101341871" superClass="com.xilinx.ide.accel.managedbuild.input.cpp"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.c.596786632" superClass="com.xilinx.ide.accel.managedbuild.input.c"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_linker.hw.572501474" name="GCC Host Linker (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_linker.hw">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.paths.2042587764" name="Library search path (-L)" superClass="com.xilinx.ide.accel.cpp.linker.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_LIB}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/lib/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.libs.x86.50965180" name="Libraries (-l)" superClass="com.xilinx.ide.accel.cpp.linker.option.libs.x86" valueType="libFiles">
+                                    									
+                                    <listOptionValue builtIn="false" value="xml2"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_core"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_imgproc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_features2d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_flann"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_video"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_calib3d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_highgui"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="xilinxopencl"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="pthread"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="rt"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="stdc++"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.11067485" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        		
+        <cconfiguration id="com.xilinx.ide.accel.config.hw.x86.1204191872">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.xilinx.ide.accel.config.hw.x86.1204191872" moduleId="org.eclipse.cdt.core.settings" name="Hardware">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration artifactName="${ProjName}" buildArtefactType="com.xilinx.accelerated.buildArtefactType.hostExe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=com.xilinx.accelerated.buildArtefactType.hostExe" cleanCommand="rm -rf" description="" id="com.xilinx.ide.accel.config.hw.x86.1204191872" name="Hardware" parent="com.xilinx.ide.accel.config.hw.x86">
+                    					
+                    <folderInfo id="com.xilinx.ide.accel.config.hw.x86.1204191872." name="/" resourcePath="">
+                        						
+                        <toolChain id="com.xilinx.ide.accel.toolchain.hw.1998011080" name="Accelerated Host Application Toolchain (x86_64)" superClass="com.xilinx.ide.accel.toolchain.hw">
+                            							
+                            <targetPlatform id="com.xilinx.ide.accel.config.hw.x86.1204191872..1389100614" name=""/>
+                            							
+                            <builder buildPath="${workspace_loc:/project}/Hardware" enableAutoBuild="true" id="com.xilinx.ide.accel.builder.host.446172467" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Accelerated Host Application Builder" superClass="com.xilinx.ide.accel.builder.host"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.emconfigutil.1417487721" name="emconfigutil" superClass="com.xilinx.ide.accel.tool.emconfigutil"/>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_compiler.hw.1298727433" name="GCC Host Compiler (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_compiler.hw">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.include.paths.1524770022" name="Include paths (-I)" superClass="com.xilinx.ide.accel.cpp.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/ext/xcl2/}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:/${ProjName}/libs/xf_opencv/L1/include}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/usr/include/opencv"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${workspace_loc:${ProjName}/src/build}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_INCLUDE}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/include/"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_VIVADO_HLS}/include/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.compiler.preprocessor.def.846713527" name="Defined symbols (-D)" superClass="com.xilinx.ide.accel.cpp.compiler.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDSVHLS__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__SDA_MEM_MAP__"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="VITIS_PLATFORM=$(VITIS_PLATFORM)"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__USE_XOPEN2K8"/>
+                                    								
+                                </option>
+                                								
+                                <option id="gnu.cpp.compiler.option.other.other.2089327134" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-O3 -c -fmessage-length=0" valueType="string"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.cpp.500960758" superClass="com.xilinx.ide.accel.managedbuild.input.cpp"/>
+                                								
+                                <inputType id="com.xilinx.ide.accel.managedbuild.input.c.753933233" superClass="com.xilinx.ide.accel.managedbuild.input.c"/>
+                                							
+                            </tool>
+                            							
+                            <tool id="com.xilinx.ide.accel.tool.gcc_linker.hw.30681400" name="GCC Host Linker (x86_64)" superClass="com.xilinx.ide.accel.tool.gcc_linker.hw">
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.paths.963734641" name="Library search path (-L)" superClass="com.xilinx.ide.accel.cpp.linker.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:OPENCV_LIB}"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${env_var:XILINX_XRT}/lib/"/>
+                                    								
+                                </option>
+                                								
+                                <option id="com.xilinx.ide.accel.cpp.linker.option.libs.x86.717074976" name="Libraries (-l)" superClass="com.xilinx.ide.accel.cpp.linker.option.libs.x86" valueType="libFiles">
+                                    									
+                                    <listOptionValue builtIn="false" value="xml2"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_core"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_imgproc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_features2d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_flann"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_video"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_calib3d"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="opencv_highgui"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="xilinxopencl"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="pthread"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="rt"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="stdc++"/>
+                                    								
+                                </option>
+                                								
+                                <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1847264841" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+                                    									
+                                    <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+                                    									
+                                    <additionalInput kind="additionalinput" paths="$(LIBS)"/>
+                                    								
+                                </inputType>
+                                							
+                            </tool>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    					
+                    <sourceEntries>
+                        						
+                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        					
+                    </sourceEntries>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="project.com.xilinx.ide.accel.hostProject.x86.1067925732" name="Accelerated Host Application Project (x86_64)" projectType="com.xilinx.ide.accel.hostProject.x86"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="refreshScope"/>
+    
+</cproject>

@@ -1,0 +1,46 @@
+Begin Function 'mean_shift_accel'
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local track_read <> <integer> <> 'read' <>
+reg: track_read_reg_273[63:0] lv
+
+local dy_read <> <integer> <> 'read' <>
+reg: dy_read_reg_278[63:0] lv
+
+local dx_read <> <integer> <> 'read' <>
+reg: dx_read_reg_283[63:0] lv
+
+local obj_width_read <> <integer> <> 'read' <>
+reg: obj_width_read_reg_288[63:0] lv
+
+local obj_height_read <> <integer> <> 'read' <>
+reg: obj_height_read_reg_293[63:0] lv
+
+local tly_read <> <integer> <> 'read' <>
+reg: tly_read_reg_298[63:0] lv
+
+local tlx_read <> <integer> <> 'read' <>
+reg: tlx_read_reg_303[63:0] lv
+
+local img_inp_read <> <integer> <> 'read' <>
+reg: img_inp_read_reg_308[63:0] lv
+
+local empty_73 <> <integer> <> 'trunc' <>
+reg: empty_73_reg_314[9:0] lv
+
+local outMat_cols <> <integer> <> 'trunc' <>
+reg: outMat_cols_reg_320[9:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local empty <> <integer> <> 'trunc' <>
+reg: empty_reg_336[6:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state4)
+# ST_4
+
+End Function 'mean_shift_accel'
+

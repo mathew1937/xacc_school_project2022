@@ -1,0 +1,96 @@
+===============================================================================
+Version:    v++ v2021.1 (64-bit)
+Build:      SW Build 3246112 on 2021-06-09-14:19:56
+Copyright:  Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+Created:    Fri Jan 28 10:21:51 2022
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             krnl_mean_shift
+Target Device:           xilinx:aws-vu9p-f1:shell-v04261818:201920.2
+Target Clock:            250.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name       Type  Target              OpenCL Library   Compute Units
+----------------  ----  ------------------  ---------------  -------------
+mean_shift_accel  c     fpga0:OCL_REGION_0  krnl_mean_shift  1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     krnl_mean_shift
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit        Kernel Name       Module Name                                                                               Target Frequency  Estimated Frequency
+------------------  ----------------  ----------------------------------------------------------------------------------------  ----------------  -------------------
+mean_shift_accel_1  mean_shift_accel  rgb2hsv_9_550_598_1_s                                                                     250               342.465759
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_44_1                               250               342.465759
+mean_shift_accel_1  mean_shift_accel  entry_proc                                                                                250               inf
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_Pipeline_loop_blockread_inner                   250               342.465759
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_s                                               250               342.465759
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3039_1                                                        250               969.932068
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3053_2                                                        250               858.369141
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3067_3                                                        250               858.369141
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3081_4                                                        250               858.369141
+mean_shift_accel_1  mean_shift_accel  Inverse                                                                                   250               361.794495
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_init        250               555.24707
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_width       250               377.928955
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_accumulate  250               481.695587
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_s                              250               361.794495
+mean_shift_accel_1  mean_shift_accel  xFTrackmulFindhist_550_598_598_9_550_598_1_unsigned_int_unsigned_short_s                  250               342.465759
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_Pipeline_loop_weight_width     250               357.270447
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_s                              250               357.270447
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_61_2                               250               342.465759
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_s                                                      250               342.465759
+mean_shift_accel_1  mean_shift_accel  mean_shift_accel                                                                          250               342.465759
+
+Latency Information
+Compute Unit        Kernel Name       Module Name                                                                               Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------------  ----------------  ----------------------------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+mean_shift_accel_1  mean_shift_accel  rgb2hsv_9_550_598_1_s                                                                     5 ~ 49335008    5              12333758      49335008        20.000 ns        49.335 ms       0.197 sec
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_44_1                               75 ~ 93         75             83            93              0.300 us         0.332 us        0.372 us
+mean_shift_accel_1  mean_shift_accel  entry_proc                                                                                0               0              0             0               0 ns             0 ns            0 ns
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_Pipeline_loop_blockread_inner                   23 ~ 601        23             312           601             92.000 ns        1.248 us        2.404 us
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_s                                               101 ~ 372351    101            108351        372351          0.404 us         0.433 ms        1.489 ms
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3039_1                                                        6               6              6             6               24.000 ns        24.000 ns       24.000 ns
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3053_2                                                        6               6              6             6               24.000 ns        24.000 ns       24.000 ns
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3067_3                                                        6               6              6             6               24.000 ns        24.000 ns       24.000 ns
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3081_4                                                        6               6              6             6               24.000 ns        24.000 ns       24.000 ns
+mean_shift_accel_1  mean_shift_accel  Inverse                                                                                   3 ~ 12          3              8             12              12.000 ns        32.000 ns       48.000 ns
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_init        514             514            514           514             2.056 us         2.056 us        2.056 us
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_width       47 ~ 605        47             325           605             0.188 us         1.300 us        2.420 us
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_accumulate  515             515            515           515             2.060 us         2.060 us        2.060 us
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_s                              2099 ~ 337098   2099           95379         337098          8.396 us         0.382 ms        1.348 ms
+mean_shift_accel_1  mean_shift_accel  xFTrackmulFindhist_550_598_598_9_550_598_1_unsigned_int_unsigned_short_s                  2100 ~ 372352   3419           108351        372351          13.676 us        0.433 ms        1.489 ms
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_Pipeline_loop_weight_width     59 ~ 637        59             637           637             0.236 us         2.548 us        2.548 us
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_s                              13 ~ 353717     13             235802        353717          52.000 ns        0.943 ms        1.415 ms
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_61_2                               73 ~ 91         73             81            91              0.292 us         0.324 us        0.364 us
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_s                                                      2 ~ 29788688    2              1720965       29788688        8.000 ns         6.884 ms        0.119 sec
+mean_shift_accel_1  mean_shift_accel  mean_shift_accel                                                                          11 ~ 79123700   10             14054726      79123699        40.000 ns        56.219 ms       0.316 sec
+
+Area Information
+Compute Unit        Kernel Name       Module Name                                                                               FF     LUT    DSP  BRAM  URAM
+------------------  ----------------  ----------------------------------------------------------------------------------------  -----  -----  ---  ----  ----
+mean_shift_accel_1  mean_shift_accel  rgb2hsv_9_550_598_1_s                                                                     457    1573   0    3     0
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_44_1                               844    670    0    0     0
+mean_shift_accel_1  mean_shift_accel  entry_proc                                                                                14     35     0    0     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_Pipeline_loop_blockread_inner                   46     106    0    0     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulBlkRead_550_598_598_9_550_598_1_s                                               292    790    0    0     0
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3039_1                                                        6      106    0    0     0
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3053_2                                                        6      109    0    0     0
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3067_3                                                        6      109    0    0     0
+mean_shift_accel_1  mean_shift_accel  Inverse_Pipeline_VITIS_LOOP_3081_4                                                        6      109    0    0     0
+mean_shift_accel_1  mean_shift_accel  Inverse                                                                                   135    789    0    4     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_init        12     61     0    0     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_width       484    778    0    1     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_Pipeline_loop_hist_accumulate  93     131    0    0     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulHist_550_299_598_1_9_unsigned_int_unsigned_short_s                              1219   2403   0    8     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulFindhist_550_598_598_9_550_598_1_unsigned_int_unsigned_short_s                  1701   3413   0    8     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_Pipeline_loop_weight_width     2727   1814   0    1     0
+mean_shift_accel_1  mean_shift_accel  xFTrackmulWeight_550_598_598_1_unsigned_int_unsigned_short_s                              4484   4145   0    6     0
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_Pipeline_VITIS_LOOP_61_2                               322    353    0    0     0
+mean_shift_accel_1  mean_shift_accel  MeanShift_10_4_550_598_9_550_598_1_s                                                      8388   10713  0    47    0
+mean_shift_accel_1  mean_shift_accel  mean_shift_accel                                                                          12771  17192  0    60    0
+-------------------------------------------------------------------------------

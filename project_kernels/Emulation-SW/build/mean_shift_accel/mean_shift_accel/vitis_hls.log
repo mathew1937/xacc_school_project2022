@@ -1,0 +1,94 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2021.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-94-117.ec2.internal' (Linux_x86_64 version 3.10.0-1160.31.1.el7.x86_64) on Fri Jan 28 14:38:17 UTC 2022
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel'
+Sourcing Tcl script 'mean_shift_accel.tcl'
+INFO: [HLS 200-1510] Running: open_project mean_shift_accel 
+INFO: [HLS 200-10] Creating and opening project '/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel'.
+INFO: [HLS 200-1510] Running: set_top mean_shift_accel 
+INFO: [HLS 200-1510] Running: add_files /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp -cflags  -g -D __SDA_MEM_MAP__ -I /home/centos/workspace/project_kernels/src -I /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include -I /home/centos/workspace/project_kernels/src/build  
+INFO: [HLS 200-10] Adding design file '/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 250.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname mean_shift_accel 
+INFO: [HLS 200-1510] Running: csynth_design -synthesis_check 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 108.756 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp' ... 
+WARNING: [HLS 207-910] 'INPUT_PTR_WIDTH' macro redefined: /home/centos/workspace/project_kernels/src/../../project/src/../../project/src/build/xf_mean_shift_config_params.h:17:9
+INFO: [HLS 207-71] previous definition is here: /home/centos/workspace/project_kernels/src/../../project/src/xf_cvt_color_config.h:33:9
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:48:9
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+WARNING: [HLS 207-5301] unused parameter 'src': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:506:30
+WARNING: [HLS 207-5301] unused parameter '_data': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:517:30
+WARNING: [HLS 207-5301] unused parameter 'index': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:530:14
+WARNING: [HLS 207-5301] unused parameter 'index': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:541:20
+WARNING: [HLS 207-5301] unused parameter 'dst': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:773:101
+WARNING: [HLS 207-5301] unused parameter 'index': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:1165:102
+WARNING: [HLS 207-5301] unused parameter 'index': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:1471:34
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:151:43
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:152:43
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:153:46
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:154:46
+WARNING: [HLS 207-5301] unused parameter 'y1': /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:194:30
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:151:43
+INFO: [HLS 207-4230] in instantiation of function template specialization 'xf::cv::rgb2hsv<9, 550, 598, 1>' requested here: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:13
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:152:43
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:153:46
+WARNING: [HLS 207-4610] the argument to '__builtin_assume' has side effects that will be discarded: /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:154:46
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.13 seconds. CPU system time: 0.62 seconds. Elapsed time: 8.97 seconds; current allocated memory: 110.149 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 550, 598, 1, -1>::init(int, int, bool)' into 'void xf::cv::Mat<9, 550, 598, 1, -1>::init<-1, (void*)0>(int, int, void*)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:554:9)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 550, 598, 1, -1>::init(int, int, bool)' into 'xf::cv::Mat<9, 550, 598, 1, -1>::Mat()' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:645:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<24>, 0>::write(ap_uint<24> const&)' into 'void xFTrackmulBlkReadIn<550, 598, 598, 9, 550, 598, 1>(DataType<9, 1>::name*, xf::cv::Mat<9, 550, 598, 1, -1>&, int, hls::stream<DataType<9, 1>::name, 0>&, int, int, unsigned short)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:89:16)
+INFO: [HLS 214-131] Inlining function 'void xFTrackmulBlkReadIn<550, 598, 598, 9, 550, 598, 1>(DataType<9, 1>::name*, xf::cv::Mat<9, 550, 598, 1, -1>&, int, hls::stream<DataType<9, 1>::name, 0>&, int, int, unsigned short)' into 'void xFTrackmulBlkRead<550, 598, 598, 9, 550, 598, 1>(hls::stream<DataType<9, 1>::name, 0>&, xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short, unsigned short, unsigned short, unsigned short)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:124:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<24>, 0>::read(ap_uint<24>&)' into 'hls::stream<ap_uint<24>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<24>, 0>::read()' into 'void xFTrackmulHist<550, 299, 598, 1, 9, unsigned int, unsigned short>(hls::stream<StreamType<9>::name, 0>&, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int*, unsigned int*, unsigned short*, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:245:52)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<24>, 0>::read()' into 'void xFTrackmulHist<550, 299, 598, 1, 9, unsigned int, unsigned short>(hls::stream<StreamType<9>::name, 0>&, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int*, unsigned int*, unsigned short*, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:246:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<24>, 0>::stream()' into 'void xFTrackmulFindhist<550, 598, 598, 9, 550, 598, 1, unsigned int, unsigned short>(xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int*, unsigned int*, unsigned short*, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:456:51)
+INFO: [HLS 214-131] Inlining function 'xFTrackmulSqrt(int)' into 'void xFTrackmulWeight<550, 598, 598, 1, unsigned int, unsigned short>(unsigned int*, unsigned int*, unsigned short*, unsigned short&, unsigned short&, unsigned short, unsigned short, unsigned short&, unsigned short&, bool&, unsigned short, unsigned short)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:372:26)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 550, 598, 1, -1>::Mat(int, int, void*)' into 'mean_shift_accel' (/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:43)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<9, 550, 598, 1, -1>::Mat()' into 'mean_shift_accel' (/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:46)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<9, 550, 598, 1, -1>::assignDataPtr<-1, (void*)0>(void*)' into 'void xf::cv::Mat<9, 550, 598, 1, -1>::init<-1, (void*)0>(int, int, void*)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:553:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<24> xf::cv::Mat<9, 550, 598, 1, -1>::read<-1, (void*)0>(int)' into 'void xf::cv::rgb2hsv<9, 550, 598, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, xf::cv::Mat<9, 550, 598, 1, -1>&)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:73:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<9, 550, 598, 1, -1>::write<-1, (void*)0>(int, ap_uint<24>)' into 'void xf::cv::rgb2hsv<9, 550, 598, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, xf::cv::Mat<9, 550, 598, 1, -1>&)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_rgb2hsv.hpp:73:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<24> xf::cv::Mat<9, 550, 598, 1, -1>::read<-1, (void*)0>(int)' into 'void xFTrackmulBlkRead<550, 598, 598, 9, 550, 598, 1>(hls::stream<DataType<9, 1>::name, 0>&, xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short, unsigned short, unsigned short, unsigned short)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:111:0)
+INFO: [HLS 214-178] Inlining function 'xFTrackmulFindbin(unsigned char, unsigned char, unsigned char)' into 'void xFTrackmulFindbinIncrement<550, 598, unsigned short>(ap_uint<32>, short&, unsigned short&, unsigned short*, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:156:0)
+INFO: [HLS 214-178] Inlining function 'void xFTrackmulFindbinIncrement<550, 598, unsigned short>(ap_uint<32>, short&, unsigned short&, unsigned short*, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int)' into 'void xFTrackmulHist<550, 299, 598, 1, 9, unsigned int, unsigned short>(hls::stream<StreamType<9>::name, 0>&, unsigned short, unsigned short, unsigned short, unsigned short, unsigned int*, unsigned int*, unsigned short*, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:199:0)
+INFO: [HLS 214-178] Inlining function 'void xFTrackmulKernelFunc<550, 598, 598, 9, 550, 598, 10, 8, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short, unsigned short, unsigned short, unsigned short, unsigned short&, unsigned short&, bool&, unsigned char, unsigned char, unsigned char)' into 'void xFMeanShiftKernel<550, 598, 9, 550, 598, 10, 4, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned char, unsigned char, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:582:0)
+INFO: [HLS 214-178] Inlining function 'void xFMeanShiftKernel<550, 598, 9, 550, 598, 10, 4, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned char, unsigned char, unsigned char)' into 'void xf::cv::MeanShift<10, 4, 550, 598, 9, 550, 598, 1>(xf::cv::Mat<9, 550, 598, 1, -1>&, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned short*, unsigned char, unsigned char, unsigned char)' (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:38:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<9, 550, 598, 1, -1>::init<-1, (void*)0>(int, int, void*)' into 'mean_shift_accel' (/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:33:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.58 seconds. CPU system time: 0.35 seconds. Elapsed time: 4.93 seconds; current allocated memory: 111.186 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 111.187 MB.
+INFO: [HLS 200-1493] Running only source code synthesis checks, skipping scheduling and RTL generation.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14.73 seconds. CPU system time: 0.98 seconds. Elapsed time: 13.92 seconds; current allocated memory: 111.159 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 15.83 seconds. Total CPU system time: 1.32 seconds. Total elapsed time: 15.05 seconds; peak allocated memory: 111.187 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 28 14:38:32 2022...

@@ -1,0 +1,34 @@
+Begin Function 'MeanShift<10, 4, 550, 598, 9, 550, 598, 1>_Pipeline_VITIS_LOOP_61_2'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local icmp_ln61 <icmp_61> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:61>
+icmp_ln61 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:61
+reg: icmp_ln61_reg_265[0:0] lv
+
+local gmem3_addr <getelementptr_66> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:66>
+gmem3_addr /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:66
+reg: gmem3_addr_reg_274[63:0] lv
+
+local gmem3_addr_1 <getelementptr_67> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:67>
+gmem3_addr_1 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:67
+reg: gmem3_addr_1_reg_285[63:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage1)
+# ST_2
+local dispx_load <load_66> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:66>
+dispx_load /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:66
+reg: dispx_load_reg_296[15:0] lv
+
+local dispy_load <load_67> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:67>
+dispy_load /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:67
+reg: dispy_load_reg_301[15:0] lv
+
+local track_status_load <load_68> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:68>
+track_status_load /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:68
+reg: track_status_load_reg_306[15:0] lv
+
+
+End Function 'MeanShift<10, 4, 550, 598, 9, 550, 598, 1>_Pipeline_VITIS_LOOP_61_2'
+

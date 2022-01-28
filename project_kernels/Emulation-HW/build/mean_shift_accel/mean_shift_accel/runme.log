@@ -1,0 +1,64 @@
+
+*** Running vitis_hls
+    with args -f mean_shift_accel.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vitis_HLS/2021.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vitis_HLS/2021.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'centos' on host 'ip-172-31-94-117.ec2.internal' (Linux_x86_64 version 3.10.0-1160.31.1.el7.x86_64) on Fri Jan 28 13:48:01 UTC 2022
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel'
+Sourcing Tcl script 'mean_shift_accel.tcl'
+INFO: [HLS 200-1510] Running: open_project mean_shift_accel 
+INFO: [HLS 200-10] Creating and opening project '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel'.
+INFO: [HLS 200-1510] Running: set_top mean_shift_accel 
+INFO: [HLS 200-1510] Running: add_files /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp -cflags  -g -D __SDA_MEM_MAP__ -I /home/centos/workspace/project_kernels/src -I /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include -I /home/centos/workspace/project_kernels/src/build  
+INFO: [HLS 200-10] Adding design file '/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-1611] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 250.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname mean_shift_accel 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 108.754 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp' ... 
+WARNING: [HLS 207-910] 'INPUT_PTR_WIDTH' macro redefined: /home/centos/workspace/project_kernels/src/../../project/src/../../project/src/build/xf_mean_shift_config_params.h:17:9
+INFO: [HLS 207-71] previous definition is here: /home/centos/workspace/project_kernels/src/../../project/src/xf_cvt_color_config.h:33:9
+ERROR: [HLS 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:55
+ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:55
+ERROR: [HLS 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:50
+ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:57
+ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:33
+WARNING: [HLS 207-5528] Ignore interface attribute or pragma which is not used in top function: /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:48:9
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3.17 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.69 seconds; current allocated memory: 109.858 MB.
+ 
+    while executing
+"source mean_shift_accel.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 4.3 seconds. Total CPU system time: 0.55 seconds. Total elapsed time: 2.84 seconds; peak allocated memory: 109.520 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Jan 28 13:48:04 2022...

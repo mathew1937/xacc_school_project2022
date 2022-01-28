@@ -1,0 +1,26 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/centos/workspace/project_kernels/Emulation-HW/build/reports/mean_shift_accel
+	Log files: /home/centos/workspace/project_kernels/Emulation-HW/build/logs/mean_shift_accel
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel.xo.compile_summary, at Fri Jan 28 09:31:55 2022
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 28 09:31:55 2022
+INFO: [v++ 60-895]   Target platform: /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2021.1
+INFO: [v++ 60-1302] Platform 'xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm' has been explicitly enabled for this release.
+INFO: [v++ 60-585] Compiling for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+INFO: [v++ 60-242] Creating kernel: 'mean_shift_accel'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: mean_shift_accel Log file: /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log :
+ERROR: [v++ 214-134] Pointer to pointer is not supported (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:553:0)
+ERROR: [v++ 214-134] in function 'void xf::cv::Mat<9, 550, 598, 1, -1>::init<-1, (void*)0>(int, int, void*)': Pointer to pointer is not supported (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:513:14)
+ERROR: [v++ 214-135] Syn check fail!
+ERROR: [v++ 200-1715] Encountered problem during source synthesis
+ERROR: [v++ 60-300] Failed to build kernel(ip) mean_shift_accel, see log for details: /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log
+ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 214-134] Pointer to pointer is not supported (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:553:0)
+ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 214-134] in function 'void xf::cv::Mat<9, 550, 598, 1, -1>::init<-1, (void*)0>(int, int, void*)': Pointer to pointer is not supported (/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/common/xf_structs.hpp:513:14)
+ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 214-135] Syn check fail!
+ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: [v++ 60-599] Kernel compilation failed to complete
+ERROR: [v++ 60-592] Failed to finish compilation
+INFO: [v++ 60-1653] Closing dispatch client.

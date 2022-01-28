@@ -1,0 +1,77 @@
+Begin Function 'xFTrackmulWeight<550, 598, 598, 1, unsigned int, unsigned short>_Pipeline_loop_weight_width'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_3
+local add_ln364 <add_364> <integer> <Arithmetic> 'add' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:364>
+add_ln364 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:364
+reg: add_ln364_reg_662[16:0] lv
+
+# ST_5
+local mul_ln364 <mul_364> <integer> <Arithmetic><MultiCycle> 'mul' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:364>
+mul_ln364 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:364
+reg: mul_ln364_reg_682[31:0] lv
+
+# ST_6
+local bin <select_357> <integer> <> 'select' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357>
+bin /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357
+reg: bin_reg_687[8:0] lv
+
+local icmp_ln367 <icmp_367> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367>
+icmp_ln367 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367
+reg: icmp_ln367_reg_692[0:0] lv
+
+# ST_7
+local Qu_load <load_367> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367>
+Qu_load /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367
+reg: Qu_load_reg_701[31:0] lv
+
+local icmp_ln367_1 <icmp_367> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367>
+icmp_ln367_1 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367
+reg: icmp_ln367_1_reg_706[0:0] lv
+
+# ST_8
+local icmp_ln367_2 <icmp_367> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367>
+icmp_ln367_2 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:367
+reg: icmp_ln367_2_reg_720[0:0] lv
+
+local trunc_ln5 <partselect_325> <integer> <> 'partselect' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:325>
+trunc_ln5 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:325
+reg: trunc_ln5_reg_724[23:0] lv
+
+# ST_11
+local icmp_ln281 <icmp_281> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:281>
+icmp_ln281 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:281
+reg: icmp_ln281_reg_735[0:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local yy_cast_cast <> <integer> <> 'zext' <>
+reg: yy_cast_cast_reg_623[16:0] lv
+
+local A_cast3_cast <> <integer> <> 'sext' <>
+reg: A_cast3_cast_reg_628[19:0] lv
+
+local icmp_ln347 <icmp_347> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:347>
+icmp_ln347 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:347
+reg: icmp_ln347_reg_633[0:0] lv
+
+local trunc_ln357 <trunc_357> <integer> <> 'trunc' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357>
+trunc_ln357 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357
+reg: trunc_ln357_reg_637[0:0] lv
+
+local lshr_ln <partselect_357> <integer> <> 'partselect' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357>
+lshr_ln /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:357
+reg: lshr_ln_reg_642[14:0] lv
+
+local B <sub_359> <integer> <Arithmetic> 'sub' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:359>
+B /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:359
+reg: B_reg_647[15:0] lv
+
+local x_4 <select_361> <integer> <> 'select' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:361>
+x /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:361
+reg: x_4_reg_652[7:0] lv
+
+
+End Function 'xFTrackmulWeight<550, 598, 598, 1, unsigned int, unsigned short>_Pipeline_loop_weight_width'
+

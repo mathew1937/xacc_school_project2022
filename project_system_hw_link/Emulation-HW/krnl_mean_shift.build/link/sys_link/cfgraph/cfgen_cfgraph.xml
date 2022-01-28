@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="x86" cf:partition="0" cf:prefix="p_0_" cf:name="dr" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_mean_shift_accel">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="img_inp" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="tlx" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="tly" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="obj_height" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="obj_width" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="dx" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="dy" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="track" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="frame_status" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="no_objects" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="no_of_iterations" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="rows" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="cols" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_mean_shift_accel">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="img_inp" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="tlx" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="tly" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="obj_height" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="obj_width" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="dx" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="dy" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="track" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="frame_status" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="no_objects" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="no_of_iterations" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="rows" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="cols" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="shell-v04261818" xd:componentRef="shell-v04261818" xd:clockId="0"/>
+  <cf:comp cf:name="mean_shift_accel_1" xd:componentRef="mean_shift_accel" xd:clockId="0"/>
+  <cf:instance cf:name="hwinst_mean_shift_accel_1" cf:blockName="hwblk_mean_shift_accel" cf:compName="mean_shift_accel_1">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="s_axi_control" xd:register="0x0"/>
+    <cf:portMap cf:blockPort="img_inp" cf:compPort="m_axi_gmem1" cf:ctrlPort="s_axi_control" xd:register="0x10"/>
+    <cf:portMap cf:blockPort="tlx" cf:compPort="m_axi_gmem2" cf:ctrlPort="s_axi_control" xd:register="0x1C"/>
+    <cf:portMap cf:blockPort="tly" cf:compPort="m_axi_gmem2" cf:ctrlPort="s_axi_control" xd:register="0x28"/>
+    <cf:portMap cf:blockPort="obj_height" cf:compPort="m_axi_gmem4" cf:ctrlPort="s_axi_control" xd:register="0x34"/>
+    <cf:portMap cf:blockPort="obj_width" cf:compPort="m_axi_gmem4" cf:ctrlPort="s_axi_control" xd:register="0x40"/>
+    <cf:portMap cf:blockPort="dx" cf:compPort="m_axi_gmem3" cf:ctrlPort="s_axi_control" xd:register="0x4C"/>
+    <cf:portMap cf:blockPort="dy" cf:compPort="m_axi_gmem3" cf:ctrlPort="s_axi_control" xd:register="0x58"/>
+    <cf:portMap cf:blockPort="track" cf:compPort="m_axi_gmem5" cf:ctrlPort="s_axi_control" xd:register="0x64"/>
+    <cf:portMap cf:blockPort="frame_status" cf:compPort="s_axi_control" xd:register="0x70"/>
+    <cf:portMap cf:blockPort="no_objects" cf:compPort="s_axi_control" xd:register="0x78"/>
+    <cf:portMap cf:blockPort="no_of_iterations" cf:compPort="s_axi_control" xd:register="0x80"/>
+    <cf:portMap cf:blockPort="rows" cf:compPort="s_axi_control" xd:register="0x88"/>
+    <cf:portMap cf:blockPort="cols" cf:compPort="s_axi_control" xd:register="0x90"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_mean_shift_accel_1" cf:blockName="swblk_mean_shift_accel" cf:compName="shell-v04261818">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+    <cf:portMap cf:blockPort="img_inp" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="tlx" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="tly" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="obj_height" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="obj_width" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="dx" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="dy" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="track" cf:compPort="memory_subsystem" cf:ctrlPort="slr1/interconnect_axilite_user_1_M01_AXI" cf:sptag="DDR[1]"/>
+    <cf:portMap cf:blockPort="frame_status" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+    <cf:portMap cf:blockPort="no_objects" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+    <cf:portMap cf:blockPort="no_of_iterations" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+    <cf:portMap cf:blockPort="rows" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+    <cf:portMap cf:blockPort="cols" cf:compPort="slr1/interconnect_axilite_user_1_M01_AXI"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="s_axi_control" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="s_axi_control">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="img_inp" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="img_inp">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="tlx" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="tlx">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="tly" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="tly">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="obj_height" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="obj_height">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="obj_width" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="obj_width">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="dx" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="dx">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="dy" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="dy">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="track" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="track">
+    <cf:dataMover cf:compName="mean_shift_accel_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="frame_status" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="frame_status">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="no_objects" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="no_objects">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="no_of_iterations" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="no_of_iterations">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="rows" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="rows">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mean_shift_accel_1" cf:srcPort="cols" cf:dstInst="hwinst_mean_shift_accel_1" cf:dstPort="cols">
+    <cf:dataMover cf:compName="shell-v04261818" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

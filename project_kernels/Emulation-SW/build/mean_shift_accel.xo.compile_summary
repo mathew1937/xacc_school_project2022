@@ -1,0 +1,171 @@
+<ENTRY>
+{
+ "thisFile": "/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jan 28 14:38:07 2022",
+ "timestampMillis": "1643380687664",
+ "buildStep": {
+  "cmdId": "c3f30c46-3c0c-4e1e-897f-3bbcbe07f432",
+  "name": "v++",
+  "logFile": "/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2021.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target sw_emu --compile -I../src --config mean_shift_accel-compile.cfg -D__SDA_MEM_MAP__ -I/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include -I/home/centos/workspace/project_kernels/src/build -obuild/mean_shift_accel.xo ../src/xf_mean_shift_accel.cpp ",
+  "args": [
+   "--target",
+   "sw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "mean_shift_accel-compile.cfg",
+   "-D__SDA_MEM_MAP__",
+   "-I/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include",
+   "-I/home/centos/workspace/project_kernels/src/build",
+   "-obuild/mean_shift_accel.xo",
+   "../src/xf_mean_shift_accel.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/centos/workspace/project_kernels/Emulation-SW/mean_shift_accel-compile.cfg",
+    "content": "platform=/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm\nsave-temps=1\nkernel=mean_shift_accel\ndebug=1\nmessageDb=build/mean_shift_accel.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=mean_shift_accel"
+   }
+  ],
+  "cwd": "/home/centos/workspace/project_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 28 14:38:07 2022",
+ "timestampMillis": "1643380687664",
+ "status": {
+  "cmdId": "c3f30c46-3c0c-4e1e-897f-3bbcbe07f432",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jan 28 14:38:13 2022",
+ "timestampMillis": "1643380693732",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_SW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mean_shift_accel",
+     "file": "/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2021.1. SW Build 3246112 on 2021-06-09-14:19:56"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jan 28 14:38:13 2022",
+ "timestampMillis": "1643380693736",
+ "buildStep": {
+  "cmdId": "d9904ce3-bab7-410e-85eb-996852a620f1",
+  "name": "vitis_hls",
+  "logFile": "/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/centos/workspace/project_kernels/Emulation-SW/build/mean_shift_accel/mean_shift_accel/mean_shift_accel.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/centos/workspace/project_kernels/Emulation-SW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 28 14:38:13 2022",
+ "timestampMillis": "1643380693737",
+ "status": {
+  "cmdId": "d9904ce3-bab7-410e-85eb-996852a620f1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 28 14:38:32 2022",
+ "timestampMillis": "1643380712442",
+ "status": {
+  "cmdId": "d9904ce3-bab7-410e-85eb-996852a620f1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jan 28 14:38:32 2022",
+ "timestampMillis": "1643380712452",
+ "report": {
+  "path": "/home/centos/workspace/project_kernels/Emulation-SW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jan 28 14:38:32 2022",
+ "timestampMillis": "1643380712453",
+ "report": {
+  "path": "/home/centos/workspace/project_kernels/Emulation-SW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 28 14:38:32 2022",
+ "timestampMillis": "1643380712453",
+ "status": {
+  "cmdId": "c3f30c46-3c0c-4e1e-897f-3bbcbe07f432",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

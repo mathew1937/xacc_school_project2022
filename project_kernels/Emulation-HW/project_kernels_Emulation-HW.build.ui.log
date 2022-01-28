@@ -1,0 +1,42 @@
+2022-01-28T13:47:39.06843300255-13:47:39 **** Incremental Build of configuration Emulation-HW for project project_kernels ****
+000-make -j8 all 
+000-/opt/Xilinx/Vitis/2021.1/bin/v++ --target hw_emu --compile -I"../src" --config mean_shift_accel-compile.cfg -D__SDA_MEM_MAP__ -I/home/centos/workspace/project_kernels/libs/xf_opencv/L1/include -I/home/centos/workspace/project_kernels/src/build -o"build/mean_shift_accel.xo" "../src/xf_mean_shift_accel.cpp"
+000-Option Map File Used: '/opt/Xilinx/Vitis/2021.1/data/vitis/vpp/optMap.xml'
+000-
+000-****** v++ v2021.1 (64-bit)
+000-  **** SW Build 3246112 on 2021-06-09-14:19:56
+000-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+000-
+000-INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+000-	Reports: /home/centos/workspace/project_kernels/Emulation-HW/build/reports/mean_shift_accel
+000-	Log files: /home/centos/workspace/project_kernels/Emulation-HW/build/logs/mean_shift_accel
+000-Running Dispatch Server on port: 44323
+000-INFO: [v++ 60-1548] Creating build summary session with primary output /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel.xo.compile_summary, at Fri Jan 28 13:47:52 2022
+000-INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Fri Jan 28 13:47:52 2022
+000-INFO: [v++ 60-895]   Target platform: /home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+000-INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/centos/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+000-INFO: [v++ 74-78] Compiler Version string: 2021.1
+000-INFO: [v++ 60-1302] Platform 'xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm' has been explicitly enabled for this release.
+000-INFO: [v++ 60-585] Compiling for hardware emulation target
+000-INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+000-INFO: [v++ 60-242] Creating kernel: 'mean_shift_accel'
+000-
+000-===>The following messages were generated while  performing high-level synthesis for kernel: mean_shift_accel Log file: /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log :
+000/project_kernels/Emulation-HW0-1-1v++ 207-3771: use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:552-ERROR: [v++ 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:55
+000/project_kernels/Emulation-HW0-1-1v++ 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:552-ERROR: [v++ 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:55
+000/project_kernels/Emulation-HW0-1-1v++ 207-3771: use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:502-ERROR: [v++ 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:50
+000/project_kernels/Emulation-HW0-1-1v++ 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:572-ERROR: [v++ 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:57
+000/project_kernels/Emulation-HW0-1-1v++ 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:332-ERROR: [v++ 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:33
+000/project_kernels/Emulation-HW0-1-1v++ 60-300: Failed to build kernel(ip) mean_shift_accel, see log for details: /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log2-ERROR: [v++ 60-300] Failed to build kernel(ip) mean_shift_accel, see log for details: /home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log
+000/project_kernels/Emulation-HW0-1-1v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771: use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:552-ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:51:55
+000/project_kernels/Emulation-HW0-1-1v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:552-ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:52:55
+000/project_kernels/Emulation-HW0-1-1v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771: use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:502-ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'inMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:50
+000/project_kernels/Emulation-HW0-1-1v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:572-ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:54:57
+000/project_kernels/Emulation-HW0-1-1v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771: use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:332-ERROR: [v++ 60-773] In '/home/centos/workspace/project_kernels/Emulation-HW/build/mean_shift_accel/mean_shift_accel/vitis_hls.log', caught Tcl error: ERROR: [HLS 207-3771] use of undeclared identifier 'outMat': /home/centos/workspace/project_kernels/src/xf_mean_shift_accel.cpp:56:33
+000/project_kernels/Emulation-HW0-1-1v++ 60-599: Kernel compilation failed to complete2-ERROR: [v++ 60-599] Kernel compilation failed to complete
+000/project_kernels/Emulation-HW0-1-1v++ 60-592: Failed to finish compilation2-ERROR: [v++ 60-592] Failed to finish compilation
+000-INFO: [v++ 60-1653] Closing dispatch client.
+000/project_kernels/Emulation-HW0-1-1make: *** [build/mean_shift_accel.xo] Error 12-make: *** [build/mean_shift_accel.xo] Error 1
+00255-
+13:48:04 Build Finished (took 25s.120ms)
+

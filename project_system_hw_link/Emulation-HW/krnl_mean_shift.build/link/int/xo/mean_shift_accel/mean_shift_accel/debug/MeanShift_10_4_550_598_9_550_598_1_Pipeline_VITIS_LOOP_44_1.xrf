@@ -1,0 +1,81 @@
+Begin Function 'MeanShift<10, 4, 550, 598, 9, 550, 598, 1>_Pipeline_VITIS_LOOP_44_1'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local sext_ln44_5_cast <> <integer> <> 'sext' <>
+reg: sext_ln44_5_cast_reg_448[63:0] lv
+
+local sext_ln44_3_cast <> <integer> <> 'sext' <>
+reg: sext_ln44_3_cast_reg_453[63:0] lv
+
+local sext_ln44_1_cast <> <integer> <> 'sext' <>
+reg: sext_ln44_1_cast_reg_458[63:0] lv
+
+local icmp_ln44 <icmp_44> <integer> <Comparator> 'icmp' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:44>
+icmp_ln44 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:44
+reg: icmp_ln44_reg_468[0:0] lv
+
+local zext_ln44 <zext_44> <integer> <> 'zext' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:44>
+zext_ln44 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:44
+reg: zext_ln44_reg_472[63:0] lv
+
+local gmem2_addr <getelementptr_49> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:49>
+gmem2_addr /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:49
+reg: gmem2_addr_reg_486[63:0] lv
+
+local gmem4_addr <getelementptr_51> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:51>
+gmem4_addr /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:51
+reg: gmem4_addr_reg_492[63:0] lv
+
+local gmem3_addr <getelementptr_53> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:53>
+gmem3_addr /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:53
+reg: gmem3_addr_reg_498[63:0] lv
+
+# ST_73
+local gmem2_addr_1_read <read_50> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:50>
+gmem2_addr_1_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:50
+reg: gmem2_addr_1_read_reg_542[15:0] lv
+
+local gmem4_addr_1_read <read_52> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:52>
+gmem4_addr_1_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:52
+reg: gmem4_addr_1_read_reg_547[15:0] lv
+
+local gmem3_addr_1_read <read_54> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:54>
+gmem3_addr_1_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:54
+reg: gmem3_addr_1_read_reg_552[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage1)
+# ST_2
+local gmem2_addr_1 <getelementptr_50> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:50>
+gmem2_addr_1 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:50
+reg: gmem2_addr_1_reg_504[63:0] lv
+
+local gmem4_addr_1 <getelementptr_52> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:52>
+gmem4_addr_1 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:52
+reg: gmem4_addr_1_reg_510[63:0] lv
+
+local gmem3_addr_1 <getelementptr_54> <integer> <> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:54>
+gmem3_addr_1 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:54
+reg: gmem3_addr_1_reg_516[63:0] lv
+
+local gmem5_addr_read <read_55> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:55>
+gmem5_addr_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:55
+reg: gmem5_addr_read_reg_522[15:0] lv
+
+# ST_72
+local gmem2_addr_read <read_49> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:49>
+gmem2_addr_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:49
+reg: gmem2_addr_read_reg_527[15:0] lv
+
+local gmem4_addr_read <read_51> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:51>
+gmem4_addr_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:51
+reg: gmem4_addr_read_reg_532[15:0] lv
+
+local gmem3_addr_read <read_53> <integer> <> 'read' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:53>
+gmem3_addr_read /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift.hpp:53
+reg: gmem3_addr_read_reg_537[15:0] lv
+
+
+End Function 'MeanShift<10, 4, 550, 598, 9, 550, 598, 1>_Pipeline_VITIS_LOOP_44_1'
+

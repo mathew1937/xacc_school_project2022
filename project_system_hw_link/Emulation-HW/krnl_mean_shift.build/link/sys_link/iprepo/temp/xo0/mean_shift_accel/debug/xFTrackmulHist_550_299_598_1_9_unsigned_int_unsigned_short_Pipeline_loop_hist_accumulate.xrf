@@ -1,0 +1,27 @@
+Begin Function 'xFTrackmulHist<550, 299, 598, 1, 9, unsigned int, unsigned short>_Pipeline_loop_hist_accumulate'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local cmp49_read <> <integer> <> 'read' <>
+reg: cmp49_read_reg_167[0:0] lv
+
+local zext_ln270 <zext_270> <integer> <> 'zext' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:270>
+zext_ln270 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:270
+reg: zext_ln270_reg_175[63:0] lv
+
+local add_ln268 <add_268> <integer> <Arithmetic> 'add' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:268>
+add_ln268 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:268
+reg: add_ln268_reg_180[12:0] lv
+
+# ST_2
+local Qu_addr <getelementptr_268> <integer> <GetArrayAddress> 'getelementptr' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:268>
+Qu_addr /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:268
+reg: Qu_addr_reg_195[12:0] lv
+
+local add_ln270 <add_270> <integer> <Arithmetic> 'add' </home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:270>
+add_ln270 /home/centos/workspace/project_kernels/libs/xf_opencv/L1/include/imgproc/xf_mean_shift_kernel.hpp:270
+reg: add_ln270_reg_200[31:0] lv
+
+
+End Function 'xFTrackmulHist<550, 299, 598, 1, 9, unsigned int, unsigned short>_Pipeline_loop_hist_accumulate'
+

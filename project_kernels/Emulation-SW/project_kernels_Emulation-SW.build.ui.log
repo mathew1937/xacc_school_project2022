@@ -1,0 +1,6 @@
+2022-01-28T14:41:26.25269100255-14:41:26 **** Incremental Build of configuration Emulation-SW for project project_kernels ****
+000-make -j8 all 
+000-make: Nothing to be done for `all'.
+00255-
+14:41:26 Build Finished (took 79ms)
+

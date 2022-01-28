@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="">
+  <FileSets>
+    <FileSet Name="kernel_mean_shift_accel" Type="DesignSrcs">
+      <File Path="/home/centos/workspace/project_system_hw_link/Emulation-SW/krnl_mean_shift.build/link/int/xo/mean_shift_accel/mean_shift_accel/cpu_sources/xf_mean_shift_accel.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>
